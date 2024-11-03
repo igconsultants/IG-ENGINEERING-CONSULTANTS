@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG ENGINEERING CONSULTANTS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light cyan background */
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
+        header {
+            background: #00796b; /* Teal background */
+            color: #fff; /* White text */
+            padding: 15px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em; /* Increased height */
+            font-family: 'Arial Rounded MT Bold', sans-serif; /* Rounded text style */
+            margin: 0; /* Remove default margin */
+        }
+        nav {
+            margin: 20px 0;
+            display: none; /* Hide the navigation links */
+        }
+        .container {
+            max-width: 1200px; 
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff; /* White background */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #00796b; /* Same teal as header */
+            color: #fff; 
+            width: 100%;
+        }
+        h2 {
+            color: #00796b; /* Teal color for headings */
+            border-bottom: 2px solid #00796b; /* Underline for headings */
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+            line-height: 1.6; /* Improve line spacing for readability */
+        }
+        .form-container {
+            flex: 1;
+            margin-left: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: none; /* Remove shadow */
+        }
+        button {
+            padding: 10px;
+            background: #00796b; /* Teal background */
+            color: #fff; 
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #004d40; /* Darker teal on hover */
+        }
+        .services-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .contact-info {
+            margin-bottom: 15px;
+            color: #333; /* Darker text color for contrast */
+        }
+        .registry-info {
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .form-container, .services-container {
+                margin: 0;
+                flex: 1 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IG ENGINEERING CONSULTANTS</h1>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>IG ENGINEERING CONSULTANTS is a civil and structural engineering consultancy firm that provides essential services to support building projects. We specialize in structural steel design, formwork and falsework design, and temporary work design. Our team also conducts periodic structural inspections to ensure safety and compliance. Additionally, we manage BCA submissions to streamline the approval process for our clients. With a strong focus on quality and client satisfaction, we help bring construction projects to life safely and efficiently.</p>
+    </section>
+
+    <div class="services-container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Periodic Structural Inspection</li>
+            <li>Civil, Structural, and Geotechnical Engineering Design</li>
+            <li>Temporary Works Design</li>
+            <li>Scaffolding, Formworks, and Falseworks Design</li>
+            <li>Temporary ERSS Design</li>
+            <li>Authority Submission</li>
+        </ul>
+
+        <div>
+            <h2>Location:</h2>
+            <p>2 Venture Drive<br>#14-02<br>Vision Exchange<br>Singapore (608526)</p>
+        </div>
+
+        <div class="registry-info">
+            <h2>Business Registry Details</h2>
+            <p>You can view our business registry details <a href="https://www.sgpbusiness.com/company/Ig-Engineering-Consultants" target="_blank">here</a>.</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <div class="contact-info">Email: igconsultants.sg@gmail.com</div>
+        <div class="contact-info">WhatsApp: +65 86581395</div> <!-- Updated Phone Number -->
+
+        <form action="YOUR_FORM_HANDLER_URL" method="POST">
+            <label for="name">Your Name (required):</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email (required):</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 IG ENGINEERING CONSULTANTS. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
