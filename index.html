@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IG ENGINEERING CONSULTANTS</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet"> <!-- Work Sans font -->
     <style>
-
-  body {
-    font-family: "Helvetica", Arial, sans-serif; /* Using Helvetica with fallbacks */
-    margin: 0;
-    padding: 0;
-    background-color: #e0f7fa; /* Light cyan background */
-    display: flex;
-    flex-direction: column;
-    height: 100vh; 
-}
+        body {
+            font-family: 'Work Sans', sans-serif; /* Using Work Sans */
+            font-weight: 300; /* Light font weight */
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light cyan background */
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
         header {
             background: #00796b; /* Teal background */
             color: #fff; /* White text */
             padding: 15px 0;
             text-align: center;
+            font-family: "Helvetica", Arial, sans-serif; /* Helvetica for header */
         }
         h1 {
             font-size: 3em; /* Increased height */
-            font-family: 'Arial Rounded MT Bold', sans-serif; /* Rounded text style */
             margin: 0; /* Remove default margin */
         }
         .container {
@@ -121,7 +122,8 @@
     <section id="about">
         <h2>About Us</h2>
         <p style="text-align: justify;">
-        <p>IG ENGINEERING CONSULTANTS is a civil and structural engineering consultancy firm that provides essential services to support building projects. We specialize in structural steel design, formwork and falsework design, and temporary work design. Our team also conducts periodic structural inspections to ensure safety and compliance. Additionally, we manage BCA submissions to streamline the approval process for our clients. With a strong focus on quality and client satisfaction, we help bring construction projects to life safely and efficiently.</p>
+        IG ENGINEERING CONSULTANTS is a civil and structural engineering consultancy firm that provides essential services to support building projects. We specialize in structural steel design, formwork and falsework design, and temporary work design. Our team also conducts periodic structural inspections to ensure safety and compliance. Additionally, we manage BCA submissions to streamline the approval process for our clients. With a strong focus on quality and client satisfaction, we help bring construction projects to life safely and efficiently.
+        </p>
     </section>
 
     <div class="services-container">
@@ -141,30 +143,30 @@
         </div>
     </div>
 
-   <div class="form-container">
-    <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to reach out!</p>
-    <div class="contact-info">Email: igconsultants.sg@gmail.com</div>
-    <div class="contact-info">WhatsApp: +65 86581395</div>
-    <form action="https://formspree.io/f/mrbgpraz" method="POST"> <!-- Replace {your-form-id} -->
-        <label for="name">Your Name (required):</label>
-        <input type="text" id="name" name="name" required>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <div class="contact-info">Email: igconsultants.sg@gmail.com</div>
+        <div class="contact-info">WhatsApp: +65 86581395</div>
+        <form action="https://formspree.io/f/mrbgpraz" method="POST">
+            <label for="name">Your Name (required):</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="mobile">Your Mobile Number (required):</label>
-        <input type="text" id="mobile" name="mobile" required>
+            <label for="mobile">Your Mobile Number (required):</label>
+            <input type="text" id="mobile" name="mobile" required>
 
-        <label for="email">Your Email (required):</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Your Email (required):</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Send</button>
-    </form>
-</div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 
 </div>
 
