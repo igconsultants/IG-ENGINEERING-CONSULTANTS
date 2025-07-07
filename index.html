@@ -6,7 +6,6 @@
   <title>IG ENGINEERING CONSULTANTS</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    /* Global Styles */
     html, body {
       max-width: 100%;
       overflow-x: hidden;
@@ -34,7 +33,9 @@
     header h1 {
       font-size: 2.5em;
       margin: 0;
-      word-wrap: break-word;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     h1, h2, h3 {
@@ -66,7 +67,6 @@
       line-height: 1.6;
     }
 
-    /* Container Styles */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -78,7 +78,6 @@
       flex-direction: column;
     }
 
-    /* Top Row: Image and About Us */
     .top-row {
       display: flex;
       flex-wrap: wrap;
@@ -115,7 +114,6 @@
       line-height: 1.8;
     }
 
-    /* Services and Location Sections */
     .services-container,
     .location-container {
       margin-bottom: 30px;
@@ -132,7 +130,6 @@
       background-color: #e8f5e9;
     }
 
-    /* Contact Info Section */
     .contact-info {
       margin-bottom: 15px;
       font-size: 1.2em;
@@ -187,10 +184,12 @@
       background: #004d40;
     }
 
-    /* Responsive Styles */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 1.6em;
+        font-size: 1.3em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         padding: 0 10px;
       }
 
@@ -202,7 +201,6 @@
       .about-container {
         margin: 0;
         flex: 1;
-        text-align: center;
       }
 
       .image-container img {
@@ -211,7 +209,7 @@
       }
 
       .about-container {
-        text-align: center;
+        text-align: justify;
         margin-bottom: 20px;
       }
 
@@ -234,12 +232,9 @@
   <div class="container">
     <!-- Top Row: Image and About Us section -->
     <div class="top-row">
-      <!-- Image Section -->
       <div class="image-container">
         <img src="image.jpg" alt="About Us Image" />
       </div>
-
-      <!-- About Us Section -->
       <div class="about-container">
         <h2>About Us</h2>
         <p>
@@ -289,10 +284,6 @@
 
         <label for="message">Message (Max 2000 characters):</label>
         <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
-
-        <!-- File Attachment (Optional) -->
-        <label for="file">Attach a file (Optional):</label>
-        <input type="file" id="file" name="file" />
 
         <button type="submit">Send</button>
       </form>
