@@ -4,111 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IG ENGINEERING CONSULTANTS</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Open Sans font -->
     <style>
+        /* Global Styles */
         body {
-            font-family: 'Open Sans', sans-serif; /* Using Open Sans */
-            font-weight: 400; /* Normal font weight for better readability */
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
-            padding: 20px; /* Added padding for better spacing */
-            background-color: #ffffff; /* White background */
-            color: #333; /* Darker text color for improved contrast */
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
             display: flex;
             flex-direction: column;
-            height: 100vh; 
+            height: 100%;
         }
+
         header {
-            background: #00796b; /* Teal background */
-            color: #fff; /* White text */
-            padding: 15px 0;
-            text-align: center;
-            font-family: "Helvetica", Arial, sans-serif; /* Helvetica for header */
-        }
-        h1 {
-            font-size: 3em; /* Increased height */
-            margin: 0; /* Remove default margin */
-        }
-        .container {
-            max-width: 1200px; 
-            margin: 0 auto;
+            background: #00796b; /* Deep Green */
+            color: #ffffff;
             padding: 20px;
-            background: #ffffff; /* White background */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1; 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            text-align: center;
+            font-size: 2.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        h1 {
+            margin: 0;
+        }
+
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #00796b; /* Same teal as header */
-            color: #fff; 
+            padding: 10px;
+            background: #00796b;
+            color: #fff;
             width: 100%;
         }
+
         h2 {
-            color: #00796b; /* Teal color for headings */
-            border-bottom: 2px solid #00796b; /* Underline for headings */
+            color: #00796b; /* Deep Green */
+            border-bottom: 2px solid #00796b;
             padding-bottom: 5px;
         }
+
         ul {
             list-style-type: disc;
             margin-left: 20px;
+            padding-left: 20px;
         }
+
         li {
             margin: 10px 0;
-            line-height: 1.6; /* Improve line spacing for readability */
+            line-height: 1.6;
         }
-        .form-container {
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Row: Image and About Us */
+        .top-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
             flex: 1;
-            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .about-container {
+            flex: 2;
+            text-align: justify;
+            padding: 20px;
+            background-color: #e0f2f1; /* Light Green */
+            border-radius: 8px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            object-fit: contain;
+            max-height: 350px;
+        }
+
+        .about-container p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Services and Location Sections */
+        .services-container, .location-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-container {
+            background-color: #f1f8e9; /* Very Light Green */
+        }
+
+        .location-container {
+            background-color: #e8f5e9; /* Light Green */
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            background-color: #e8f5e9; /* Light Green */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         form {
             display: flex;
             flex-direction: column;
         }
+
         label {
             margin: 10px 0 5px;
+            color: #00796b;
         }
-        input, textarea {
-            padding: 10px;
+
+        input, textarea, select {
+            padding: 12px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            box-shadow: none; /* Remove shadow */
+            box-shadow: none;
         }
+
+        textarea {
+            resize: vertical;
+        }
+
         button {
-            padding: 10px;
-            background: #00796b; /* Teal background */
-            color: #fff; 
+            padding: 12px;
+            background: #00796b;
+            color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             transition: background 0.3s;
+            font-size: 1.1em;
         }
+
         button:hover {
-            background: #004d40; /* Darker teal on hover */
+            background: #004d40; /* Darker Green on Hover */
         }
-        .services-container {
-            flex: 1;
-            margin-right: 20px;
-        }
-        .contact-info {
-            margin-bottom: 15px;
-            color: #333; /* Darker text color for contrast */
-        }
-        .registry-info {
-            margin-top: 20px;
-        }
+
+        /* Responsive Styles */
         @media (max-width: 768px) {
-            .container {
+            .top-row {
                 flex-direction: column;
             }
-            .form-container, .services-container {
+
+            .image-container, .about-container {
                 margin: 0;
-                flex: 1 1 auto;
+                flex: 1;
+                text-align: center;
+            }
+
+            .image-container img {
+                max-width: 90%;
+                margin-top: 20px;
+            }
+
+            .about-container {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .services-container, .location-container {
+                margin-top: 30px;
             }
         }
     </style>
@@ -120,13 +209,23 @@
 </header>
 
 <div class="container">
-    <section id="about">
-        <h2>About Us</h2>
-        <p style="text-align: justify;">
-        IG ENGINEERING CONSULTANTS is a civil and structural engineering consultancy firm that provides essential services to support building projects. We specialize in structural steel design, formwork and falsework design, and temporary work design. Our team also conducts periodic structural inspections to ensure safety and compliance. Additionally, we manage BCA submissions to streamline the approval process for our clients. With a strong focus on quality and client satisfaction, we help bring construction projects to life safely and efficiently.
-        </p>
-    </section>
+    <!-- Top Row: Image and About Us section -->
+    <div class="top-row">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="image.jpg" alt="About Us Image"> <!-- Replace with actual image path -->
+        </div>
 
+        <!-- About Us Section -->
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>
+                IG ENGINEERING CONSULTANTS is a newly established civil engineering firm registered in Singapore. We provide consultancy services in civil, structural, and geotechnical engineering design for both temporary and permanent works, as well as conduct periodic structural inspections. Our team focuses on delivering innovative, safe, and practical solutions tailored to each project's needs. We handle BCA submissions and ensure full compliance with regulations, all while prioritizing client satisfaction, value-driven solutions, and timely project delivery. With a strong focus on quality and collaboration, we are dedicated to helping construction projects succeed safely, efficiently, and on schedule.
+            </p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
     <div class="services-container">
         <h2>Our Services</h2>
         <ul>
@@ -137,19 +236,22 @@
             <li>Temporary ERSS Design</li>
             <li>Authority Submission</li>
         </ul>
-
-        <div>
-            <h2>Location:</h2>
-            <p>2 Venture Drive, #14-02 Vision Exchange, Singapore 608526 </p>
-        </div>
     </div>
 
+    <!-- Location Section -->
+    <div class="location-container">
+        <h2>Location:</h2>
+        <p>2 Venture Drive, #14-02 Vision Exchange, Singapore 608526</p>
+    </div>
+
+    <!-- Contact Us Form Section -->
     <div class="form-container">
         <h2>Contact Us</h2>
         <p>If you have any questions, feel free to reach out!</p>
         <div class="contact-info">Email: igconsultants.sg@gmail.com</div>
         <div class="contact-info">WhatsApp: +65 86581395</div>
-        <form action="https://formspree.io/f/mrbgpraz" method="POST">
+
+        <form action="https://formspree.io/f/mrbgpraz" method="POST" enctype="multipart/form-data">
             <label for="name">Your Name (required):</label>
             <input type="text" id="name" name="name" required>
 
@@ -162,13 +264,16 @@
             <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message (Max 2000 characters):</label>
+            <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+
+            <!-- File Attachment (Optional) -->
+            <label for="file">Attach a file (Optional):</label>
+            <input type="file" id="file" name="file">
 
             <button type="submit">Send</button>
         </form>
     </div>
-
 </div>
 
 <footer>
